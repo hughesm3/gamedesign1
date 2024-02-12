@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3 uid="uid://c38qeuw5c6t6h"]
+
+[ext_resource type="Script" path="res://prog82a.gd" id="1_pay8f"]
+
+[node name="prog82a" type="Node2D"]
+script = ExtResource("1_pay8f")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 22.0
+offset_right = 222.0
+offset_bottom = 105.0
+text = "enter speed limit"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 124.0
+offset_right = 278.0
+offset_bottom = 263.0
+text = "enter vechile speed"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 124.0
+offset_right = 491.0
+offset_bottom = 252.0
+text = "enter vechile speed"
+
+[node name="btncalc" type="Button" parent="Label3"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 184.0
+offset_right = 167.0
+offset_bottom = 231.0
+text = "calculative"
+
+[node name="btnclear" type="Button" parent="Label3"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 173.0
+offset_right = 365.0
+offset_bottom = 220.0
+text = "clear"
+
+[node name="btnexit" type="Button" parent="Label3"]
+layout_mode = 0
+offset_left = 411.0
+offset_top = 169.0
+offset_right = 560.0
+offset_bottom = 216.0
+text = "exit"
+
+[node name="txtspeed" type="LineEdit" parent="."]
+anchors_preset = -1
+anchor_right = 0.128
+anchor_bottom = 0.112
+offset_left = 268.0
+offset_top = 116.0
+offset_right = 353.464
+offset_bottom = 151.432
+
+[node name="txtlimit" type="LineEdit" parent="."]
+offset_left = 198.0
+offset_top = 22.0
+offset_right = 265.063
+offset_bottom = 53.0
+
+[connection signal="pressed" from="Label3/btncalc" to="." method="_on_btncalc_pressed"]

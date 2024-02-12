@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb0hsra44f58v"]
+
+[ext_resource type="Script" path="res://aboutme.gd" id="1_fo0cy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="aboutme" type="Label" parent="."]
+offset_left = 265.0
+offset_top = 182.0
+offset_right = 816.0
+offset_bottom = 353.0
+script = ExtResource("1_fo0cy")
+
+[node name="favsport" type="Button" parent="aboutme"]
+layout_mode = 0
+offset_left = -245.0
+offset_top = 259.0
+offset_right = 84.0
+offset_bottom = 433.0
+
+[node name="name" type="Button" parent="aboutme"]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 267.0
+offset_right = 484.0
+offset_bottom = 441.0
+
+[node name="clear" type="Button" parent="aboutme"]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 256.0
+offset_right = 879.0
+offset_bottom = 430.0
+
+[connection signal="pressed" from="aboutme/favsport" to="aboutme" method="_on_favsport_pressed"]
+[connection signal="pressed" from="aboutme/name" to="aboutme" method="_on_name_pressed"]

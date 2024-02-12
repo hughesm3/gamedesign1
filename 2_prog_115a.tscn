@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://hjraklw6i5tu"]
+
+[ext_resource type="Script" path="res://2prog115a.gd" id="1_lc4d0"]
+
+[node name="2prog115a" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = -3.0
+offset_right = 15.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lc4d0")
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_right = 1146.0
+offset_bottom = 462.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 469.0
+offset_right = 427.0
+offset_bottom = 648.0
+text = "calculate"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 466.0
+offset_right = 784.0
+offset_bottom = 637.0
+text = "clear"
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 466.0
+offset_right = 1134.0
+offset_bottom = 625.0
+text = "exit"
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
+[connection signal="pressed" from="btnclear" to="." method="_on_btnclear_pressed"]
+[connection signal="pressed" from="btnexit" to="." method="_on_btnexit_pressed"]

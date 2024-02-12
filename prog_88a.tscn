@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdlh0a1dfq4ia"]
+
+[ext_resource type="Script" path="res://prog88a.gd" id="1_tnthk"]
+
+[node name="prog88a" type="Node2D"]
+script = ExtResource("1_tnthk")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 108.0
+offset_top = 40.0
+offset_right = 419.0
+offset_bottom = 127.0
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+offset_left = 608.0
+offset_top = 34.0
+offset_right = 891.0
+offset_bottom = 125.0
+
+[node name="Label" type="Label" parent="LineEdit2"]
+layout_mode = 0
+offset_left = -304.0
+offset_top = 276.0
+offset_right = 178.0
+offset_bottom = 501.0
+
+[node name="btncalc" type="Button" parent="."]
+offset_left = 18.0
+offset_top = 508.0
+offset_right = 336.0
+offset_bottom = 624.0
+text = "calculate"
+
+[node name="btnclear" type="Button" parent="."]
+offset_left = 414.0
+offset_top = 516.0
+offset_right = 750.0
+offset_bottom = 620.0
+text = "clear"
+
+[node name="btnexit" type="Button" parent="."]
+offset_left = 802.0
+offset_top = 518.0
+offset_right = 1138.0
+offset_bottom = 622.0
+text = "exit"

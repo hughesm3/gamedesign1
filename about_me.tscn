@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxyrpj34b6wek"]
+
+[ext_resource type="Script" path="res://favgame.gd" id="1_2eemd"]
+
+[node name="about me" type="Label"]
+offset_left = 377.0
+offset_top = 215.0
+offset_right = 660.0
+offset_bottom = 310.0
+
+[node name="favgame" type="Button" parent="."]
+layout_mode = 0
+offset_left = -129.0
+offset_top = 174.0
+offset_right = 54.0
+offset_bottom = 250.0
+script = ExtResource("1_2eemd")
+
+[node name="name" type="Button" parent="."]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 167.0
+offset_right = 314.0
+offset_bottom = 253.0
+
+[node name="clear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 363.0
+offset_top = 170.0
+offset_right = 579.0
+offset_bottom = 256.0
+
+[connection signal="pressed" from="favgame" to="favgame" method="_on_pressed"]

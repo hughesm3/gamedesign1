@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfhy2fsm8toe2"]
+
+[ext_resource type="Script" path="res://LP41-1.gd" id="1_nwljq"]
+
+[node name="LP41-1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nwljq")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 38.0
+offset_right = 496.0
+offset_bottom = 153.0
+text = "enter number of copies to print"
+
+[node name="lblOut" type="Label" parent="."]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 182.0
+offset_right = 866.0
+offset_bottom = 429.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 22.0
+offset_right = 1129.0
+offset_bottom = 147.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 482.0
+offset_right = 366.0
+offset_bottom = 654.0
+text = "calculate"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 824.0
+offset_top = 464.0
+offset_right = 1146.0
+offset_bottom = 636.0
+text = "exit"
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 462.0
+offset_right = 816.0
+offset_bottom = 634.0
+text = "clear"
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
+[connection signal="pressed" from="btnclear" to="." method="_on_btnclear_pressed"]
+[connection signal="pressed" from="btnexit" to="." method="_on_btnexit_pressed"]

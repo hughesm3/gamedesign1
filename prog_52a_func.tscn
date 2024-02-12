@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8ecb2uk00af4"]
+
+[ext_resource type="Script" path="res://prog52aFunc.gd" id="1_smwcx"]
+
+[node name="prog52aFunc" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_smwcx")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 29.0
+offset_right = 642.0
+offset_bottom = 82.0
+text = "length"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 118.0
+offset_right = 622.0
+offset_bottom = 171.0
+text = "width"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 181.0
+offset_top = 222.0
+offset_right = 607.0
+offset_bottom = 275.0
+text = "..."
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 271.0
+offset_right = 893.0
+offset_bottom = 461.0
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 40.0
+offset_right = 1123.0
+offset_bottom = 230.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 532.0
+offset_right = 357.0
+offset_bottom = 636.0
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 526.0
+offset_right = 755.0
+offset_bottom = 635.0
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 750.0
+offset_top = 530.0
+offset_right = 1143.0
+offset_bottom = 641.0
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
